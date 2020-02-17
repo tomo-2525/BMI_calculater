@@ -1,11 +1,16 @@
+<!--HTML文書であることを宣言-->
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
+    <!--文字コード-->>
     <meta charset="utf-8">
+    <!--タブのタイトル-->>
     <title>BMI 計算機</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="image/thumbnail_body_himan.jpg">
+    <meta nema="description" content="あなたのBMIを計算します。">
+    <!--favicon.icoはブラウザに表示されるアイコン-->
+    <link rel="icon" href="image/favicon.ico">
 </head>
 
 <body>
@@ -13,15 +18,16 @@
     <div class="container">
 
         <div class="top-area">
-            <img src="image/thumbnail_body_himan.jpg" alt="title" title="ぶたまるチョイス">
-            <h3>やりたいことを入力すると</h3>
-            <h3>どちらを選ぶべきか、ぶたまるが決めてくれます</h3>
+            <img src="image/title.png" alt="title" title="ぶたまるチョイス">
+            <h2>BMIチェック</h2>
+            <h3>BMIチェックによって自分の肥満度と標準体重を確認しよう！</h3>
+            <P>あなたのBMI(Body Mass Index)はいくつ？　身長・体重を入力するだけで、自分のBMIと標準体重がわかります。</P>
         </div>
 
 
         <div class="input-area">
-            <input type="text" id="do1" placeholder="やりたいこと①">
-            <input type="text" id="do2" placeholder="やりたいこと②">
+            <input type="text" id="do1" placeholder="体重">
+            <input type="text" id="do2" placeholder="身長">
             <div id="btn">決めてもらう</div>
         </div>
 
@@ -37,6 +43,10 @@
     </div>
 
     <script src="js/main.js"></script>
+
+    <footer>
+        <p>(c) tomostudyblogで検索！</p>
+    </footer>>
 </body>
 
 </html>
