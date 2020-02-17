@@ -18,9 +18,9 @@
     <div class="container">
 
         <div class="top-area" align="center">
-
+            　　　　　　　<h2>BMIチェック</h2>
             <img src="image/diet_before_man.png" alt="title" title="BMI計算機" width="120" height="120">
-            <h2>BMIチェック</h2>
+            <img src="image/diet_after_man.png" alt="title" title="BMI計算機" width="120" height="120">
             <h3>BMIチェックによって自分の肥満度と標準体重を確認しよう！</h3>
             <P>あなたのBMI(Body Mass Index)はいくつ？</p>
             <P>身長・体重を入力するだけで、自分のBMIと標準体重がわかります。</p>
@@ -28,14 +28,34 @@
 
 
         <div class="input-area" align="center">
-            <input type="text" id="do1" placeholder="体重">
-            <input type="text" id="do2" placeholder="身長">
+            <input type="text" di="weight" placeholder="体重">
+            <input type="text" id="height" placeholder="身長">
             <div id="btn">計算をする</div>
         </div>
 
 
         <div class="result-area" align="center">
             <p id="result">結果はここに表示されます</p>
+
+            <table class="bmi_result">
+                <tr>
+                    <th>
+                        <h3>あなたのBMI</h3>
+                        <div id="bmi"></div>
+                        <div>身長から見た体重の割合がわかります。<br />標準は22とされています。</div>
+                    </th>
+                    <th>
+                        <h3>BMIから見た標準体重</h3>
+                        <div id="hyoujun"></div>
+                        <div>BMIが標準値22の場合の体重です。</div>
+                    </th>
+                    <th>
+                        <h3>現在の体重－標準体重</h3>
+                        <div id="sa"></div>
+                        <div>この数値がプラスだったら、<br />体重オーバー気味ということ。</div>
+                    </th>
+                </tr>
+            </table>
             <!----<p id="reset" class="hidden">もう一度やる</p>-->
 
         </div>
