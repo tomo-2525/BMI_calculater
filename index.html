@@ -22,15 +22,15 @@
 
         <div class="top-area" align="center">
             <h1>BMIチェック</h1>
-            <img src="image/diet_before_man.png" alt="title" title="BMI計算機" width="120" height="120">
-            <img src="image/diet_after_man.png" alt="title" title="BMI計算機" width="120" height="120">
-            <h3>BMIチェックによって自分の肥満度と標準体重を確認しよう！</h3>
+            <img src="image/diet_before_man.png" alt="title" title="BMI計算機" width="220" height="220">
+            <img src="image/diet_after_man.png" alt="title" title="BMI計算機" width="220" height="220">
+            <h2>BMIチェックによって自分の肥満度と標準体重を確認しよう！</h2>
             <P>あなたのBMI(Body Mass Index)はいくつ？</p>
             <P>身長・体重を入力するだけで、自分のBMIと標準体重がわかります。</p>
         </div>
 
 
-        <div class="input-area" id="input-area" align="center">
+        <div class="input-area" align="center">
             <input type="number" id="weight" placeholder="体重 (kg)">
             <input type="number" id="height" placeholder="身長 (cm)">
             <button id="btn" align="center" onclick="BMI_cal();">計算をする</button>
@@ -43,21 +43,21 @@
                 <tr>
                     <th>
                         <h3>あなたのBMI</h3>
-                        <div>
+                        <div class="result">
                             <p id=bmi>ここに結果が表示されます</p>
                         </div>
                         <div>身長から見た体重の割合がわかります。<br />標準は22とされています。</div>
                     </th>
                     <th>
                         <h3>BMIから見た標準体重</h3>
-                        <div>
+                        <div class="result">
                             <p id="hyoujun">ここに結果が表示されます</p>
                         </div>
                         <div>BMIが標準値22の場合の体重です。</div>
                     </th>
                     <th>
                         <h3>現在の体重－標準体重</h3>
-                        <div>
+                        <div class="result">
                             <p id="sa">ここに結果が表示されます</p>
                         </div>
                         <div>この数値がプラスだったら、<br />体重オーバー気味ということ。</div>

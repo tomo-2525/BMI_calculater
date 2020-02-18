@@ -6,6 +6,6 @@ function BMI_cal() {
   var proper_weieight = (height * height) * Number(22);
 
   document.getElementById('bmi').innerHTML = bmi;
-  document.getElementById('hyoujun').innerHTML = proper_weieight;
-  document.getElementById('sa').innerHTML = weight - proper_weieight;
+  document.getElementById('hyoujun').innerHTML = proper_weieight + "kg";
+  document.getElementById('sa').innerHTML = weight - proper_weieight + "kg";
 }
