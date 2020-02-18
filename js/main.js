@@ -2,6 +2,7 @@
   //ブラウザがエラーチェックを行う
   'use strict';
 
+  //それぞれのidを取得し使えるようにする
   var btn = document.getElementById('btn');
   var weight = document.getElementById('weight');
   var height = document.getElementById('height');
@@ -27,23 +28,19 @@
     var bmi = wei / (hei * hei);
     var proper_wei = (hei * hei) * 22;
 
-    result.textContent = String(bmi);
-
-    /*var choise = [do1, do2];
-    var n = Math.floor(Math.random() * choise.length);
-    result.textContent = `今日は「${choise[n].value}」をしよう！`;
-    reset.classList.remove("hidden");
-    */
+    bmi.textContent = String(bmi);
   });
 
 
   reset.addEventListener("click", function () {
     result.textContent = "結果はここに表示されます";
-    weight.value = "";
-    height.value = "";
-    weight.focus();
+    wei.value = "";
+    hei.value = "";
+    wei.focus();
   });
 
 
-  weight.focus();
+
+
+  wei.focus();
 })();

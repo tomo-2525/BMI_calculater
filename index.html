@@ -7,7 +7,9 @@
     <meta charset="utf-8">
     <!--タブのタイトル-->>
     <title>BMI 計算機</title>
+    <!--css読み込み-->>
     <link rel="stylesheet" href="css/styles.css">
+    <!--Webページの説明　Googleなどの検索結果ページに表示される-->
     <meta nema="description" content="あなたのBMIを計算します。">
     <!--favicon.icoはブラウザに表示されるアイコン-->
     <link rel="icon" href="image/favicon.ico">
@@ -18,7 +20,7 @@
     <div class="container">
 
         <div class="top-area" align="center">
-            　　　　　　　<h2>BMIチェック</h2>
+            <h2>BMIチェック</h2>
             <img src="image/diet_before_man.png" alt="title" title="BMI計算機" width="120" height="120">
             <img src="image/diet_after_man.png" alt="title" title="BMI計算機" width="120" height="120">
             <h3>BMIチェックによって自分の肥満度と標準体重を確認しよう！</h3>
@@ -28,14 +30,14 @@
 
 
         <div class="input-area" align="center">
-            <input type="text" di="weight" placeholder="体重">
-            <input type="text" id="height" placeholder="身長">
-            <div id="btn">計算をする</div>
+            <input type="number" id="weight" placeholder="体重 (kg)">
+            <input type="number" id="height" placeholder="身長 (cm)">
         </div>
+
+        <button type="btn" id=btn align="center" onclick="function(weight, height)">計算をする</button>
 
 
         <div class="result-area" align="center">
-            <p id="result">結果はここに表示されます</p>
 
             <table class="bmi_result">
                 <tr>
@@ -56,19 +58,14 @@
                     </th>
                 </tr>
             </table>
-            <!----<p id="reset" class="hidden">もう一度やる</p>-->
 
         </div>
 
 
-        <!--<img src="image/pigboy.png" alt="ぶたまる" title="ぶたまる" id="img" width="200" height="200">-->
     </div>
 
-    <script src="js/main.js"></script>
-
-    <!--     <footer>
-        <p align="center">(c) tomostudyblogで検索！</p>
-    </footer>> -->
+    <!--javascript を読み込む-->>
+    <script type="txt/javascrpt" src="js/main.js"></script>
 
 </body>
 
