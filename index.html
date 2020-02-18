@@ -13,6 +13,8 @@
     <meta nema="description" content="あなたのBMIを計算します。">
     <!--favicon.icoはブラウザに表示されるアイコン-->
     <link rel="icon" href="image/favicon.ico">
+    <script src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -29,31 +31,37 @@
         </div>
 
 
-        <div class="input-area" align="center">
+        <div class="input-area" id="input-area" align="center">
             <input type="number" id="weight" placeholder="体重 (kg)">
             <input type="number" id="height" placeholder="身長 (cm)">
         </div>
 
-        <button type="btn" id=btn align="center" onclick="function(weight, height)">計算をする</button>
+        <!--cssで真ん中寄せにする-->
+        <button id="btn" onclick="BMI_cal();">計算をする</button>
 
 
         <div class="result-area" align="center">
-
             <table class="bmi_result">
                 <tr>
                     <th>
                         <h3>あなたのBMI</h3>
-                        <div id="bmi"></div>
+                        <div>
+                            <p id=bmi>ここに結果が表示されます</p>
+                        </div>
                         <div>身長から見た体重の割合がわかります。<br />標準は22とされています。</div>
                     </th>
                     <th>
                         <h3>BMIから見た標準体重</h3>
-                        <div id="hyoujun"></div>
+                        <div>
+                            <p id="hyoujun">ここに結果が表示されます</p>
+                        </div>
                         <div>BMIが標準値22の場合の体重です。</div>
                     </th>
                     <th>
                         <h3>現在の体重－標準体重</h3>
-                        <div id="sa"></div>
+                        <div>
+                            <p id="sa">ここに結果が表示されます</p>
+                        </div>
                         <div>この数値がプラスだったら、<br />体重オーバー気味ということ。</div>
                     </th>
                 </tr>
@@ -61,12 +69,11 @@
 
         </div>
 
-
     </div>
 
-    <!--javascript を読み込む-->>
+    <!--javascript を読み込む
     <script type="txt/javascrpt" src="js/main.js"></script>
-
+    <script type="txt/javascrpt" src="js/hogehoge.js"></script>-->
 </body>
 
 </html>

@@ -1,46 +1,11 @@
-(function () {
-  //ブラウザがエラーチェックを行う
-  'use strict';
+function BMI_cal() {
+  var weight = document.getElementById("weight").value;
+  var height = document.getElementById("height").value;
+  height = height / 100;
+  var bmi = weight / (height * height);
+  var proper_weieight = (height * height) * Number(22);
 
-  //それぞれのidを取得し使えるようにする
-  var btn = document.getElementById('btn');
-  var weight = document.getElementById('weight');
-  var height = document.getElementById('height');
-  var result = document.getElementById('result');
-  var reset = document.getElementById('reset');
-
-  //ボタンを押したときのアニメーション
-  btn.addEventListener('mousedown', function () {
-    this.className = 'pushed';
-  });
-
-  //ボタンから離れたときの処理
-  btn.addEventListener('mouseup', function () {
-    this.className = '';
-  });
-
-  //ボタンをクリックしたときの処理
-  //ここでBMIの計算を行う
-  btn.addEventListener("click", function () {
-    var wei = Number(weight);
-    var hei = Number(height);
-
-    var bmi = wei / (hei * hei);
-    var proper_wei = (hei * hei) * 22;
-
-    bmi.textContent = String(bmi);
-  });
-
-
-  reset.addEventListener("click", function () {
-    result.textContent = "結果はここに表示されます";
-    wei.value = "";
-    hei.value = "";
-    wei.focus();
-  });
-
-
-
-
-  wei.focus();
-})();
+  document.getElementById('bmi').innerHTML = bmi;
+  document.getElementById('hyoujun').innerHTML = proper_weieight;
+  document.getElementById('sa').innerHTML = weight - proper_weieight;
+}
