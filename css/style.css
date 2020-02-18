@@ -42,7 +42,7 @@ body{
   width:800px;
   text-align: center;
   margin-left: 20px;
-  padding:60px;
+  padding:80px;
   height:200px;
   border: solid;
   border-radius: 10px;
@@ -65,7 +65,7 @@ border: solid 3px #494848;/*線色*/
   text-align: center;
   padding:10px;
   width:140px;
-  height: 80px;
+  height:110px;
   margin-right: 20px;
   border:solid;
   border-radius: 10px;
