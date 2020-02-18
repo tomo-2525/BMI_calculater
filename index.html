@@ -3,17 +3,16 @@
 <html lang="ja">
 
 <head>
-    <!--文字コード-->>
+    <!--文字コード-->
     <meta charset="utf-8">
-    <!--タブのタイトル-->>
+    <!--タブのタイトル-->
     <title>BMI 計算機</title>
-    <!--css読み込み-->>
-    <link rel="stylesheet" href="css/styles.css">
+    <!--css読み込み-->
+    <link rel="stylesheet" href="css/style.css">
     <!--Webページの説明　Googleなどの検索結果ページに表示される-->
     <meta nema="description" content="あなたのBMIを計算します。">
     <!--favicon.icoはブラウザに表示されるアイコン-->
     <link rel="icon" href="image/favicon.ico">
-    <script src="js/main.js"></script>
 
 </head>
 
@@ -22,7 +21,7 @@
     <div class="container">
 
         <div class="top-area" align="center">
-            <h2>BMIチェック</h2>
+            <h1>BMIチェック</h1>
             <img src="image/diet_before_man.png" alt="title" title="BMI計算機" width="120" height="120">
             <img src="image/diet_after_man.png" alt="title" title="BMI計算機" width="120" height="120">
             <h3>BMIチェックによって自分の肥満度と標準体重を確認しよう！</h3>
@@ -34,10 +33,9 @@
         <div class="input-area" id="input-area" align="center">
             <input type="number" id="weight" placeholder="体重 (kg)">
             <input type="number" id="height" placeholder="身長 (cm)">
+            <button id="btn" align="center" onclick="BMI_cal();">計算をする</button>
         </div>
 
-        <!--cssで真ん中寄せにする-->
-        <button id="btn" onclick="BMI_cal();">計算をする</button>
 
 
         <div class="result-area" align="center">
@@ -71,9 +69,8 @@
 
     </div>
 
-    <!--javascript を読み込む
-    <script type="txt/javascrpt" src="js/main.js"></script>
-    <script type="txt/javascrpt" src="js/hogehoge.js"></script>-->
+    <!--javascript を読み込む-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
